@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% block title %}
+    {% endblock title %}
 </head>
 <body>
-    <p>
-        <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
-        <a href="{% url 'learning_logs:topics' %}">Topics</a>
-    </p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
     {% block content %}{% endblock content %}
 </body>
 </html>

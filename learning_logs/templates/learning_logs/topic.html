@@ -1,7 +1,13 @@
 {% extends 'learning_logs/base.html' %}
 
+{% block title %}
+    <title>
+        {{ topic }}
+    </title>
+{% endblock title %}
+
 {% block content %}
-    <title>{{ topic }}</title>
+
     <p>Topic: {{ topic }}</p>
 
     <p>Entries:</p>
