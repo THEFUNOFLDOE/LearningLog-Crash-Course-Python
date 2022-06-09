@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "learning_logs/base.html" %}
+
+{% block title %}
+    <title>Log out</title>
+{% endblock title %}
+
+{% block page_header %}
+    <h2>Log out</h2>
+{% endblock page_header %}
+
+{% block content %}
+    <p class="lead">You have been logged out. Thank you hor visiting!</p>
+    <a class="btn btn-lg btn-primary" href="{% url 'learning_logs:index' %}">Go to main!</a>
+{% endblock content %}
